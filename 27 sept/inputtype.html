@@ -8,15 +8,15 @@
 <body>
     <form>
         <div id="errorname"></div>
-        <input type ="text" placeholder="Enter name" id="name"><br><br>
+        <input type ="text" placeholder="Enter name" id="name" onblur="s()"><br><br>
         <div id="erroremail"></div>
-         <input type ="email" placeholder="Enter email" id="email"><br><br>
+         <input type ="email" placeholder="Enter email" id="email" onblur="t()"><br><br>
          <div id="errormobile"></div>
-          <input type ="tel" placeholder="Enter mobile number" id="mobile"><br><br>
+          <input type ="tel" placeholder="Enter mobile number" id="mobile" onblur="u()"><br><br>
           <div id="errorpassword"></div>
-           <input type ="password" placeholder="Enter password" id="password"><br><br>
+           <input type ="password" placeholder="Enter password" id="password" onblur="v()"><br><br>
            <div id="errorcpassword"></div>
-            <input type ="password" placeholder="Enter confirm password" id="cpassword"><br><br>
+            <input type ="password" placeholder="Enter confirm password" id="cpassword" onblur="w()"><br><br>
         <button onclick="return data();">submit</button>
     </form>
     <script src="./inputtype.js"></script>

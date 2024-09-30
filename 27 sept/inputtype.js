@@ -24,9 +24,9 @@ function data(){
     }
     if (mobile === ""){
         document.querySelector('#errormobile').innerHTML = "please enter your mobile number";
-        let selectemobile = document.querySelector('#mobile');
-        selectemobile.style.borderColor = "red"
-        selectemobile.style.outlineColor = "red"
+        let selectmobile = document.querySelector('#mobile');
+        selectmobile.style.borderColor = "red"
+        selectmobile.style.outlineColor = "red"
         return false;
     }
     if(password ===""){
@@ -34,14 +34,48 @@ function data(){
         let selectpassword = document.querySelector('#password');
         selectpassword.style.borderColor = "red";
         selectpassword.style.outlineColor = "red";
-        return 0;
+        return false;
     }
     if(cpassword ===""){
         document.querySelector('#errorcpassword').innerHTML = "please enter your confirm password";
         let selectcpassword = document.querySelector('#cpassword');
         selectcpassword.style.borderColor = "red";
         selectcpassword.style.outlineColor = "red";
-        return 0;
+        return false;
     }
 }
-
+function s(){
+    let selectedinput = document.querySelector('#name');
+    let selectederrorname = document.querySelector('#errorname');
+    selectederrorname.innerHTML = ""
+    selectedinput.style.borderColor = "grey";
+    selectedinput.style.outlineColor = "grey";
+}
+function t(){
+    let selectedinput = document.querySelector('#email');
+    let selectederroremail = document.querySelector('#erroremail');
+    selectederroremail.innerHTML = ""
+    selectedinput.style.borderColor = "grey";
+    selectedinput.style.outlineColor = "grey";
+}
+function u(){
+    let selectedinput = document.querySelector('#mobile');
+    let selectederrormobile = document.querySelector('#errormobile');
+    selectederrormobile.innerHTML = ""
+    selectedinput.style.borderColor = "grey";
+    selectedinput.style.outlineColor = "grey";
+}
+function v(){
+    let selectedinput = document.querySelector('#password');
+    let selectederrorpassword = document.querySelector('#errorpassword');
+    selectederrorpassword.innerHTML = ""
+    selectedinput.style.borderColor = "grey";
+    selectedinput.style.outlineColor = "grey";
+}
+function w(){
+    let selectedinput = document.querySelector('#cpassword');
+    let selectederrorcpassword = document.querySelector('#errorcpassword');
+    selectederrorcpassword.innerHTML = ""
+    selectedinput.style.borderColor = "grey";
+    selectedinput.style.outlineColor = "grey";
+}
