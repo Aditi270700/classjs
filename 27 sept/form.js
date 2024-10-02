@@ -7,7 +7,7 @@ function data(){
 
     console.log(name,email,mobile,password,cpassword);
 
-    if(name ===""){
+     if(name ===""){
         document.querySelector('#errorname').innerHTML = "please enter your name";
         let selectname = document.querySelector('#name');
         selectname.style.borderColor = "red"
@@ -15,29 +15,50 @@ function data(){
          return false;
     }
 
-    if(email ===""){
+    else if(email ===""){
         document.querySelector('#erroremail').innerHTML = "please enter your email";
         let selectemail = document.querySelector('#email');
         selectemail.style.borderColor = "red"
          selectemail.style.outlineColor = "red"
          return false;
     }
-    if (mobile === ""){
+    else if(!(email.includes('@') && email.includes(".com"))){
+        document.querySelector('#erroremail').innerHTML = "Please enter valid email";
+     let selectemail = document.querySelector('#email');
+        selectemail.style.borderColor = "red"
+         selectemail.style.outlineColor = "red"
+         return false;   
+    }
+   else if (mobile === ""){
         document.querySelector('#errormobile').innerHTML = "please enter your mobile number";
         let selectmobile = document.querySelector('#mobile');
         selectmobile.style.borderColor = "red"
         selectmobile.style.outlineColor = "red"
         return false;
     }
-    if(password ===""){
+    else if(mobile.length !== 10){
+document.querySelector('#errormobile').innerHTML = "mobile number should only 10 digit";
+let selectmobile = document.querySelector('#mobile');
+        selectmobile.style.borderColor = "red"
+        selectmobile.style.outlineColor = "red"
+        return false;
+    }
+    else if(isNaN(mobile)){
+document.querySelector('#errormobile').innerHTML = "mobile number should only integer";
+let selectmobile = document.querySelector('#mobile');
+        selectmobile.style.borderColor = "red"
+        selectmobile.style.outlineColor = "red"
+        return false;
+    }
+   else if(password ===""){
         document.querySelector('#errorpassword').innerHTML = "please enter your password";
         let selectpassword = document.querySelector('#password');
         selectpassword.style.borderColor = "red";
         selectpassword.style.outlineColor = "red";
         return false;
     }
-    if(cpassword ===""){
-        document.querySelector('#errorcpassword').innerHTML = "please enter your confirm password";
+    else if(cpassword ===""){
+    document.querySelector('#errorcpassword').innerHTML = "please enter your confirm password";
         let selectcpassword = document.querySelector('#cpassword');
         selectcpassword.style.borderColor = "red";
         selectcpassword.style.outlineColor = "red";
