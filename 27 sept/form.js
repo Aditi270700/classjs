@@ -57,6 +57,36 @@ let selectmobile = document.querySelector('#mobile');
         selectpassword.style.outlineColor = "red";
         return false;
     }
+    else if(password.length !== 8){
+document.querySelector('#errorpassword').innerHTML = "password number should only 8 digit";
+let selectpassword = document.querySelector('#password');
+        selectpassword.style.borderColor = "red"
+        selectpassword.style.outlineColor = "red"
+        return false;
+    }
+else if(!
+    (
+        password.match(/[1234567890]/)
+        &&
+        password.match(/[!@#$%^&*()]/)
+        &&
+        password.match(/[qwertyuiopasdfghjklzxcvbnm]/)
+        &&
+        password.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)
+    )){
+        document.querySelector('#errorpassword').innerHTML = "password contain atleast 1 lower, upper, special, and number";
+        let selectpassword = document.querySelector('#passowrd');
+        selectpassword.style.borderColor = "red";
+        selectpassword.style.outlineColor = "red";
+        return false;
+    }
+    else if(password !==cpassword){
+        window.alert("password and confirm password not watch");
+        document.querySelector('#cpassword').value = "";
+        document.querySelector('#password').value = "";
+       document.querySelector('#password').focus = ""; 
+       return false;
+    }
     else if(cpassword ===""){
     document.querySelector('#errorcpassword').innerHTML = "please enter your confirm password";
         let selectcpassword = document.querySelector('#cpassword');
