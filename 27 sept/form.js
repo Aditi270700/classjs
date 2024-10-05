@@ -75,7 +75,7 @@ else if(!
         password.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)
     )){
         document.querySelector('#errorpassword').innerHTML = "password contain atleast 1 lower, upper, special, and number";
-        let selectpassword = document.querySelector('#passowrd');
+        let selectpassword = document.querySelector('#password');
         selectpassword.style.borderColor = "red";
         selectpassword.style.outlineColor = "red";
         return false;
