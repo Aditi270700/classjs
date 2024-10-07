@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    #card{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 400px;
-        box-shadow:0px 0px 20px 20px silver ;
-        border-radius: 10px;
-    }
-    #card div img{
-        border-radius: 50%;
-        width: 100px;
-    }
-    </style>
+<style>
+#card{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 700px;
+box-shadow:0px 0px 20px 20px silver ;
+border-radius: 10px;
+}
+#card div img{
+border-radius: 50%;
+width: 100px;
+}
+</style>
 </head>
 <body>
+<form action="">
 <input type="text" placeholder="Enter name"  id="name"><br><br>
 <input type="text" placeholder="Enter phone number"  id="phone"><br><br>
-<input type="tel" placeholder="Enter email"  id="email"><br><br>
+<input type="text" placeholder="Enter email"  id="email"><br><br>
 <input type="text" placeholder="Enter designation"  id="designation"><br><br>
 <input type="text" placeholder="Enter address"  id="address"><br><br>
-<input type="text" placeholder="Enter image url"  id="image"><br><br>
-<button onclick="return card()">generate card</button>
-<div id="output">
-
-</div>
-    <script src="./template.js"></script>
+<input type="text" placeholder="add image url"  id="img"><br><br>
+<button onclick=" return card();">generate card</button>
+</form>
+<div id="output"></div>
+<script src="./template.js"></script>
 </body>
 </html>

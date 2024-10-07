@@ -16,6 +16,6 @@ let selectwebsite = document.querySelector('#website');
 selectwebsite.style.display = "block";
 
 let selectimg = document.querySelector('#img');
-selectimg.style.display = "none"
-    }
+selectimg.style.display = "none";
+}
 }
