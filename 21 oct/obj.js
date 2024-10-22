@@ -2,7 +2,7 @@ let obj = [{
     "id":1,
     "img": "./cake.jpg",
     "name" : "aditi",
-    "couse": "python",
+    "course": "python",
     "mobile":4654635434,
 },
 {
