@@ -32,6 +32,7 @@ function mydelete(id){
     fetch(`http://localhost:3000/students/${id}`,{
         method:'DELETE'
     })
+    .then(re=>alert("deleted successfully....!"))
 }
 
 // map method is used to fetch data
