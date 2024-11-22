@@ -1,10 +1,22 @@
 {
   "students": [
     {
-      "name": "pragati",
-      "age": 24,
+      "name": "dipika",
+      "age": "24",
       "address": "bhopal",
       "id": "10ec"
+    },
+    {
+      "name": "riya",
+      "age": "24",
+      "address": "tanatan dhaba bhawana nagar",
+      "id": "50e5"
+    },
+    {
+      "id": "50e5",
+      "name": "aditi",
+      "age": "24",
+      "address": "tanatan dhaba bhawana nagar"
     }
   ]
 }
